@@ -1039,11 +1039,22 @@
     line-height: 20px;
     font-weight: 600;
     display: inline-block;
-    min-width: 87px;
-    flex-shrink: 0;
-    debug_commit: 1de1738;
-    white-space: nowrap;
-  }
+    min-width: 100px; /* Increased for better touch targets */
+    padding: 10px 20px; /* Added padding for better spacing */
+    text-align: center; /* Center the text */
+    color: #FFFFFF; /* Text color */
+    border: none; /* Removed border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    white-space: nowrap; /* Keep text in a single line */
+    text-decoration: none; /* Remove underline from text */
+    background-color: transparent;
+    font-family: 'Comfortaa', cursive; /* Apply Comfortaa font */
+}
+
+.ngy-ci2:hover {
+    background-color: rgba(214, 210, 212, 0.4); /* Ensure text color remains white */
+}
   .header2,
   .wedding-date-headers {
     display: flex;

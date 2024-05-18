@@ -30,7 +30,7 @@
   <body>
     <div class="landing-page-web">
       <div class="landing-page-web-child"></div>
-      <section class="section">
+      <section id="section-ngaycuoi" class="section">
         <div class="li-mi-thn-mi-qu-khch-ti-wrapper">
           <div class="li-mi-thn-container">
             <p class="li-mi">Lời Mời</p>
@@ -260,6 +260,7 @@
           </div>
         </div>
       </section>
+      
       <section class="couple-intro-parent">
         <div class="couple-intro">
           <div class="couple-names">
@@ -287,17 +288,20 @@
             <div class="frame-child"></div>
             <nav class="wedding-date-headers">
               <div class="header">
-                <div class="ngy-ci">Ngày cưới</div>
+                <button class="ngy-ci2"  data-target="#section-ngaycuoi">Ngày cưới</button>
               </div>
               <div class="header1">
-                <div class="ngy-ci1">Cặp đôi</div>
+                <button class="ngy-ci2" data-target="#section-capdoi">Cặp đôi</button>
+                
               </div>
               <div class="header2">
-                <div class="ngy-ci2">Mừng cưới</div>
+                <button class="ngy-ci2" data-target="#section-mungcuoi">Mừng cưới</button>
+                
               </div>
             </nav>
           </header>
         </div>
+        <section id="section-capdoi" class="couple-intro-parent">
         <div class="bride-groom-details">
           <div class="rectangle-group">
             <div class="frame-item"></div>
@@ -384,7 +388,8 @@
           </div>
         </div>
       </section>
-      <section class="gift-container-parent">
+      </section>
+      <section id="section-mungcuoi" class="gift-container-parent">
         <div class="gift-container">
           <div class="section-parent">
             <img class="section-icon" alt="" src="./public/section@2x.png" />
@@ -517,5 +522,24 @@
         </div>
       </section>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const buttons = document.querySelectorAll('.ngy-ci2');
+      
+          buttons.forEach(button => {
+              button.addEventListener('click', (event) => {
+                  const targetId = event.currentTarget.getAttribute('data-target');
+                  const targetElement = document.querySelector(targetId);
+      
+                  if (targetElement) {
+                      window.scrollTo({
+                          top: targetElement.offsetTop,
+                          behavior: 'smooth'
+                      });
+                  }
+              });
+          });
+      });
+      </script>
   </body>
 </html>
