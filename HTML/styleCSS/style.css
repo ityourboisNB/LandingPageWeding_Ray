@@ -1035,9 +1035,9 @@
     justify-content: flex-start;
   }
   .ngy-ci2 {
-    position: relative;
     line-height: 20px;
     font-weight: 600;
+    position: relative;
     display: inline-block;
     min-width: 100px; /* Increased for better touch targets */
     padding: 10px 20px; /* Added padding for better spacing */
