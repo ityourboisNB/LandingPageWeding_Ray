@@ -32,7 +32,7 @@
 </head>
 
 <body>
-  <div id="laptop-pc">
+  <!-- <div id="laptop-pc">
     <div class="landing-page-web">
       <div class="landing-page-web-child"></div>
       <section id="section-ngaycuoi" class="section">
@@ -459,7 +459,7 @@
         });
       });
     </script>
-  </div>
+  </div> -->
 
 
 
@@ -467,20 +467,6 @@
     <div class="landing-page-mobile1">
       <div class="landing-page-mobile-child1"></div>
       <img class="rectangle-icon" alt="" src="HTML/image/CoDauChuReHeader.jpg" />
-
-      <!-- <div class="landing-page-mobile-child2">
-        <div class="menu-container" id="frameContainer">
-          <button class="dropdown-button" id="dropdownButton">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-        <div class="menu-buttons" id="menuButtons">
-          <button data-target="#section-ngaycuoi">Ngày cưới</button>
-          <button data-target="#section-capdoi">Cặp đôi</button>
-          <button data-target="#section-mungcuoi">Mừng cưới</button>
-        </div>
-      </div> -->
-
       <div class="container46">
         <div class="heading-26">
           <div class="c-du2">Cô dâu & Chú rể</div>
@@ -867,33 +853,7 @@
         </div>
     </div>
     </section>
-    <script>
-      document.getElementById("dropdownButton").addEventListener("click", function () {
-        var menu = document.getElementById("menuButtons");
-        menu.style.display = menu.style.display === "block" ? "none" : "block";
-      });
-
-      window.addEventListener("click", function (event) {
-        if (!event.target.closest('.menu-container')) {
-          var menu = document.getElementById("menuButtons");
-          if (menu.style.display === "block") {
-            menu.style.display = "none";
-          }
-        }
-      });
-
-      // Scroll to section
-      document.querySelectorAll('.menu-buttons button').forEach(button => {
-        button.addEventListener('click', function () {
-          var target = document.querySelector(this.getAttribute('data-target'));
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-            document.getElementById("menuButtons").style.display = "none"; // Hide menu after click
-          }
-        });
-      });
-    </script>
-    <script>
+    <!-- <script>
       // Kiểm tra kích thước màn hình để quyết định hiển thị phần nào
       function checkDevice() {
         if (window.innerWidth <= 768) {
@@ -912,7 +872,7 @@
       window.onresize = function () {
         checkDevice();
       };
-    </script>
+    </script> -->
   </div>
 </body>
 
