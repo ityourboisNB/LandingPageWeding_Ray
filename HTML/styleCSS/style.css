@@ -680,6 +680,7 @@
     line-height: 48px;
     display: inline-block;
     min-width: 53.3px;
+    right: 15px;
   }
   .container5 {
     align-self: stretch;
@@ -712,6 +713,7 @@
     align-self: stretch;
     position: relative;
     line-height: 48px;
+    right: 10px;
   }
   .container7 {
     align-self: stretch;
@@ -728,6 +730,7 @@
     font-family: var(--font-quicksand);
     display: inline-block;
     min-width: 22px;
+    white-space: nowrap;
   }
   .container6 {
     width: 103.8px;
@@ -744,6 +747,7 @@
     align-self: stretch;
     position: relative;
     line-height: 48px;
+    right: 15px;
   }
   .container9 {
     align-self: stretch;
@@ -1422,7 +1426,7 @@
     height: 59px;
     position: absolute;
     margin: 0 !important;
-    top: 0;
+    top: -50px;
     right: 41.6%;
     left: 41.6%;
     max-width: 100%;

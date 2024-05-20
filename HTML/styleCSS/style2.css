@@ -1556,6 +1556,8 @@
   align-self: stretch;
   position: relative;
   line-height: 21.13px;
+  right: 10px;
+  bottom: 10px;
 }
 .container69 {
   align-self: stretch;
@@ -1585,6 +1587,8 @@
   align-self: stretch;
   position: relative;
   line-height: 21.13px;
+  right: 10px;
+  bottom: 10px;
 }
 .container71 {
   align-self: stretch;
@@ -1614,6 +1618,8 @@
   align-self: stretch;
   position: relative;
   line-height: 21.13px;
+  bottom: 10px;
+  right: 10px;
 }
 .container73 {
   align-self: stretch;
@@ -1660,6 +1666,8 @@
   font-size: var(--font-size-5xs);
   font-weight: 500;
   font-family: var(--font-quicksand);
+  white-space: nowrap;
+  bottom: 10px;
 }
 .container74 {
   width: 45.7px;
